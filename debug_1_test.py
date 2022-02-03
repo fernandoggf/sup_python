@@ -11,20 +11,20 @@ car = {
    "year": "1964"
  }
 
-# shout('i',car)
-# shout('e',car)
+#shout('i',car)
+#shout('e',car)
 # shout('q',car)
 # shout('r',car)
 # shout('s',car)
 
-# shout('@',car)
-# shout('%',car)
-# shout('?',car)
+shout('@',car)
+shout('%',car)
+shout('?',car)
 
 # shout('_',car)
 
-# beginDebug('https://httpbin.org')
+beginDebug('https://httpbin.org')
 
 # endDebug()
 
-# print(obscure('password'))
+print(obscure('password'))
