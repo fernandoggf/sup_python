@@ -150,7 +150,7 @@ def endDebug():
 # so that, when it's returned, it won't be shown to the screen, replaced by several ---
 
 def obscure(str_value):															# Gets the lenght of the string, then it's divided by 4 and then rounded down
-    int_quarter = math.floor((len(str_value))/4) - 1							# finally, 1 is substracted. This will acomplish as how it follows:
+    int_quarter = math.floor((len(str_value))/4)							    # finally, 1 is substracted. This will acomplish as how it follows:
     int_length = len(str_value)													# e.g. password -> will get p[asswor]d and replace the middle section with p[-----]d
 
     repeat_value = int_length - (2 * int_quarter)
