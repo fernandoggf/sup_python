@@ -10,22 +10,30 @@ db1 = DbConnection('localhost', 'root', '', 'motors', '', '', '')
 
 db1.dbLogin()
 #x = db1.dbLogin()
-# print(x)
+#print(x)
 
-#y = db1.dbType()
+#print(db1.dbType())
 #print(y)
 
+#str_query = "INSERT INTO motors (name, fab, cil) VALUES (%s, %s, %s)"
+#data_query = "NissanRT", "Nissan", 2
 
-query = ("INSERT INTO motors (name, fab, cil)"
-	"VALUES (%s, %s, %s)")
-data = ('hyundai1x', 'hyundai', 2)
-db1.dbQuery("SHOW TABLES;", "")
+#db1.dbQuery(str_query, data_query)
+db1.dbQuery("SELECT name FROM motors")
 
 
-#x = ('-b', 4, 'juan')
-#db1.dbCondition(x)
-#db1.dbClrQuotes(d)
+#cursor.execute("INSERT INTO Person (name, age) VALUES (%s, %s)", ("tim", 19))
+db1.dbFetch('hash')
 
-#db1.dbResult(k = 'n')
 
-db1.dbLogout()
+print(db1.dbResult('all'))
+
+
+
+x = ['juan', 'ddomil', 'yes']
+#print(db1.dbCondition(x))
+db1.dbClrQuotes(x)
+
+
+
+#db1.dbLogout()
