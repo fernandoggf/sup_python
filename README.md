@@ -1,6 +1,6 @@
 sup_python
 
-This projects has the objective to transfer the code from the PHP and Perl files: 
+This project has the objective to transfer the code from the PHP and Perl files: 
 	- debug.php
 	- debug.pl
 	- sup_db.php
